@@ -287,7 +287,8 @@ button a {
   padding-top: 300px;
 }
 #event-container h1 {
-  color: whitesmoke;
+  color: var(--primary-color);
+  font-style: italic;
   font-family: var(--text-font);
   margin-top: 80px;
   margin-bottom: 50px;
@@ -607,12 +608,38 @@ button a {
     padding-top: 250px;
   }
   #event-container h1 {
-    color: whitesmoke;
+    color: var(--primary-color);
+    font-style: italic;
     font-family: var(--text-font);
+    font-size: 30px;
     margin-top: 50px;
     margin-bottom: 50px;
-    font-size: 25px;
   }
+  #event-container .row {
+    margin: 0px 0px 0px;
+  }
+  .events-divider {
+    flex-grow: 0.3;
+    height: 1px;
+    background-color: var(--primary-color);
+    margin-top: 30px;
+  }
+  #event-container h2 {
+    color: var(--primary-color);
+    font-family: var(--text-font);
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  #event-container .divider {
+    margin-bottom: 0px;
+  }
+  .container .event-1-text {
+    font-size: 18px;
+    margin-top: 30px;
+    margin: 30px 10px;
+  }
+
   /* product page */
 
   .hero-products h1 {
