@@ -355,12 +355,13 @@ button a {
 
 .slider-container {
   display: flex;
+  overflow: visible;
 }
 
 .slide {
   display: flex;
   transition: transform 0.5s ease;
-  width: 100%;
+  width: 200%;
 }
 
 .slide img {
@@ -612,6 +613,22 @@ button a {
     margin-bottom: 50px;
     font-size: 25px;
   }
+  /* product page */
+
+  .hero-products h1 {
+    font-size: 60px;
+  }
+  .container .product-page-head-info {
+    font-size: 40px;
+  }
+  .container .product-page-head-p {
+    font-size: 20px;
+    margin: 20px 35px;
+  }
+  .about-products .prod-one-p {
+    font-size: 18px;
+    margin: 10px 35px 30px;
+  }
   /* slider */
 
   .slide {
@@ -622,6 +639,8 @@ button a {
 
   .slide img {
     width: 50%;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   /* footer starts */
