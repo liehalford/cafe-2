@@ -327,7 +327,7 @@ button a {
   font-size: 25px;
 }
 .hero-products h1 {
-  display: inline;
+  display: block;
   color: whitesmoke;
   font-family: var(--text-font);
   font-style: italic;
@@ -347,7 +347,7 @@ button a {
 }
 /* carousel style */
 .carousel {
-  width: 80%;
+  width: 100%;
   margin: 0 auto; /* Center align the carousel */
   overflow: hidden;
   position: relative; /* Ensure buttons are positioned relative to the carousel */
@@ -360,10 +360,11 @@ button a {
 .slide {
   display: flex;
   transition: transform 0.5s ease;
+  width: 100%;
 }
 
 .slide img {
-  width: 33.33%;
+  width: 33.3%;
   margin-right: 10px;
 }
 
@@ -612,9 +613,16 @@ button a {
     font-size: 25px;
   }
   /* slider */
+
+  .slide {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(100% * 3);
+  }
+
   .slide img {
     width: 50%;
-    margin-right: 5px;
+    margin-right: 10px;
   }
 
   /* footer starts */
