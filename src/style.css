@@ -45,10 +45,12 @@ body {
   height: 70px;
   margin-left: 20px;
 }
-.dropdown-menu {
+.hero-home .dropdown-menu {
   background-color: rgba(0, 0, 0, 0.319);
   height: auto;
+  position: absolute;
   text-align: center;
+  z-index: 1;
 }
 .dropdown-item:hover {
   background-color: rgba(0, 0, 0, 0.583);
@@ -84,6 +86,9 @@ body {
 .logo img {
   width: 900px;
   height: 700px;
+  position: relative;
+  display: block;
+  z-index: 2;
 }
 
 .logo {
