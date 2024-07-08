@@ -1,5 +1,5 @@
 let currentIndex = 0;
-const imagesPerSet = 3;
+const imagesPerSet = 2;
 const slideWidth = 100 / imagesPerSet;
 
 function nextSlide() {
