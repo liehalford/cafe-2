@@ -3,7 +3,7 @@ let imagesPerSet = 3;
 let slideWidth = 100 / imagesPerSet;
 
 function updateVariables() {
-  if (window.innerWidth <= 600) {
+  if (window.innerWidth <= 900) {
     imagesPerSet = 2;
   } else {
     imagesPerSet = 3;
