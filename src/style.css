@@ -544,10 +544,6 @@ button a {
 }
 
 @media (max-width: 900px) {
-  .container {
-    border-left: none;
-    border-right: none;
-  }
   .container p {
     font-size: 18px;
   }
@@ -558,10 +554,6 @@ button a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
-  .logo {
-    border-left: none;
-    border-right: none;
   }
 
   .logo img {
@@ -721,6 +713,7 @@ button a {
   #event-container .divider {
     margin-bottom: 0px;
   }
+
   .container .event-1-text {
     font-size: 18px;
     margin-top: 30px;
