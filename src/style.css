@@ -419,6 +419,34 @@ button a {
   font-size: 80px;
   padding-top: 300px;
 }
+.container .location-page-head-info {
+  color: var(--primary-color);
+  margin: 50px 0px;
+  font-size: 50px;
+  font-style: italic;
+}
+.container .location-page-head-p {
+  color: whitesmoke;
+  margin-bottom: 50px;
+  margin: 0px 100px 50px 100px;
+  font-size: 25px;
+}
+.location {
+  margin-bottom: 100px;
+}
+.location .prod-one-h {
+  color: var(--primary-color);
+  margin: 30px 0px;
+}
+.location .prod-one-p {
+  color: whitesmoke;
+  margin: 0px 100px 50px 100px;
+}
+.about-locations .slide img {
+  width: 33.3%;
+  margin-right: 10px;
+  height: 500px;
+}
 
 /* footer starts */
 .footer {
@@ -704,6 +732,22 @@ button a {
     font-style: italic;
     font-size: 80px;
     padding-top: 250px;
+  }
+  .about-locations .slide img {
+    width: 33.3%;
+    margin-right: 10px;
+    height: 300px;
+  }
+  .about-locations .slide {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(100% * 3);
+  }
+
+  .about-locations .slide img {
+    width: 50%;
+    margin-right: 0px;
+    margin-left: 0px;
   }
   /* footer starts */
   #contact-container {
