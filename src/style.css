@@ -120,7 +120,7 @@ body {
 .about p {
   text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 23px;
 }
 .about img {
   width: 350px;
@@ -207,7 +207,7 @@ body {
   height: 600px;
 }
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 /* contact page */
 #contact-container {
