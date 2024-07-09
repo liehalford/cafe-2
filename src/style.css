@@ -86,9 +86,9 @@ body {
 .logo img {
   width: 900px;
   height: 700px;
-  position: relative;
   display: block;
-  z-index: 2;
+  margin: auto;
+  z-index: 3;
 }
 
 .logo {
