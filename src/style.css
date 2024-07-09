@@ -23,7 +23,7 @@ body {
 }
 
 /* hero page+navbar */
-.hero-home {
+.containerHero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/img/cover-about-modified.jpg);
   width: 100%;
@@ -68,7 +68,8 @@ body {
   color: var(--primary-color);
 }
 .nav-link:hover {
-  color: var(--primary-color);
+  cursor: pointer;
+  color: #b88e2d;
 }
 .nav-link:visited {
   color: white;
