@@ -721,7 +721,7 @@ button a {
   }
 
   .slide img {
-    width: 100%;
+    width: 50%;
     margin-right: 0px;
     margin-left: 0px;
   }
@@ -756,8 +756,8 @@ button a {
     font-size: 18px;
   }
   .about-locations .slide img {
-    width: 100%;
-    margin-right: 10px;
+    width: 50%;
+    margin-right: 0px;
     height: 300px;
   }
   .about-locations .slide {
@@ -766,11 +766,6 @@ button a {
     width: calc(100% * 3);
   }
 
-  .about-locations .slide img {
-    width: 50%;
-    margin-right: 0px;
-    margin-left: 0px;
-  }
   /* footer starts */
   #contact-container {
     padding-bottom: 50px;
