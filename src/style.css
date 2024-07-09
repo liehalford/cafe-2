@@ -721,7 +721,7 @@ button a {
   }
 
   .slide img {
-    width: 50%;
+    width: 100%;
     margin-right: 0px;
     margin-left: 0px;
   }
@@ -733,8 +733,30 @@ button a {
     font-size: 80px;
     padding-top: 250px;
   }
+
+  .container .location-page-head-info {
+    color: var(--primary-color);
+    margin: 50px 0px;
+    font-size: 40px;
+    font-style: italic;
+  }
+  .container .location-page-head-p {
+    color: whitesmoke;
+    margin-bottom: 50px;
+    margin: 0px 30px 50px 30px;
+    font-size: 25px;
+  }
+  .location .prod-one-h {
+    color: var(--primary-color);
+    margin: 30px 0px;
+  }
+  .location .prod-one-p {
+    color: whitesmoke;
+    margin: 0px 30px 50px 30px;
+    font-size: 18px;
+  }
   .about-locations .slide img {
-    width: 33.3%;
+    width: 100%;
     margin-right: 10px;
     height: 300px;
   }
