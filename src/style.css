@@ -24,8 +24,8 @@ body {
 
 /* hero page+navbar */
 .hero-home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/img/rome.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/img/cover-about-modified.jpg);
   width: 100%;
   height: 800px;
   background-position: center;
@@ -266,7 +266,7 @@ button a {
 }
 /* events page */
 .hero-events {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/img/Group\ 4547.png);
   width: 100%;
   height: 800px;
@@ -303,8 +303,8 @@ button a {
 }
 /* products page starts */
 .hero-products {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/img/Group\ 4547.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/img/hookah-accessories-everything-you-need-to-know-1\ 1.png);
   width: 100%;
   height: 800px;
   background-position: center;
@@ -394,6 +394,29 @@ button a {
 
 .next {
   right: 0;
+}
+
+/* location page */
+.hero-locations {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/locations.jpg);
+  width: 100%;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  border-bottom: 1px solid var(--primary-color);
+}
+.hero-locations h1 {
+  display: block;
+  color: whitesmoke;
+  font-family: var(--text-font);
+  font-style: italic;
+  font-size: 80px;
+  padding-top: 300px;
 }
 
 /* footer starts */
@@ -643,7 +666,11 @@ button a {
   /* product page */
 
   .hero-products h1 {
-    font-size: 60px;
+    color: rgba(245, 245, 245, 0.448);
+    font-family: var(--text-font);
+    font-style: italic;
+    font-size: 80px;
+    padding-top: 250px;
   }
   .container .product-page-head-info {
     font-size: 40px;
@@ -669,7 +696,14 @@ button a {
     margin-right: 0px;
     margin-left: 0px;
   }
-
+  /* location page */
+  .hero-locations h1 {
+    color: rgba(245, 245, 245, 0.448);
+    font-family: var(--text-font);
+    font-style: italic;
+    font-size: 80px;
+    padding-top: 250px;
+  }
   /* footer starts */
   #contact-container {
     padding-bottom: 50px;
