@@ -544,6 +544,10 @@ button a {
 }
 
 @media (max-width: 900px) {
+  .container {
+    border-left: none;
+    border-right: none;
+  }
   .container p {
     font-size: 18px;
   }
@@ -555,6 +559,11 @@ button a {
     background-position: center;
     background-size: cover;
   }
+  .logo {
+    border-left: none;
+    border-right: none;
+  }
+
   .logo img {
     margin-top: 200px;
     width: 300px;
@@ -751,7 +760,7 @@ button a {
   }
 
   .slide img {
-    width: 50%;
+    width: 100%;
     margin-right: 0px;
     margin-left: 0px;
   }

@@ -27,7 +27,7 @@ class Carousel {
   // Update variables based on window width
   updateVariables() {
     if (window.innerWidth <= 900) {
-      this.imagesPerSet = 2;
+      this.imagesPerSet = 1;
     } else {
       this.imagesPerSet = 3;
     }
