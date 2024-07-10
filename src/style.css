@@ -734,6 +734,9 @@ button[type="submit"]:hover {
     height: 130px;
   }
   /* contact page */
+  #contact-container {
+    margin-top: 80px;
+  }
   .contact-page-h2 {
     color: whitesmoke;
     font-family: var(--text-font);
