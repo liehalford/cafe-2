@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    const mailtoLink = `mailto:liehalford@gmail.com?subject=Contact%20Form%20Submission&body=Name:%20${encodeURIComponent(
+    const mailtoLink = `mailto:liehalford@gmail.com?subject=Contact%20From%20Website&body=Name:%20${encodeURIComponent(
       name
     )}%0A
     Surname:%20${encodeURIComponent(surname)}%0A
