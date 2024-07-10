@@ -83,7 +83,28 @@
     </div>
     <h1 class="contact-page-h2">Collaborate with Us!</h1>
     <h3 class="contact-text-primary">Collaborate with us and add value to your location. Cafe de Anatolia is the leader in the world of shisha in Italy. By partnering with us, we will cater to your existing clientele and generate a flow of external customers who appreciate this ritual, a clientele that is continuously growing. Together, we will decide on the best spaces and hours to offer our services. Our business model is meticulously designed to ensure that both companies derive the maximum benefits from our collaboration.</h3>
-     <button><a href="">Contact Us</a></button>
+     <button id="openFormBtn">Contact Us</button>
+     <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span id="closeBtn" class="close">&times;</span>
+      <form id="contactForm">
+        <h2>Contact Us</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="surname">Surname</label>
+        <input type="text" id="surname" name="surname" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
     
     <div class="divider">
         <div class="divider-line"></div>

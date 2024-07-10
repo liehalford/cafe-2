@@ -74,3 +74,44 @@ window.addEventListener("load", () => {
   const carousel5 = new Carousel("carousel5", 3);
   // Add more carousel instances as needed
 });
+
+// lighbox functions
+
+document.addEventListener("DOMContentLoaded", function () {
+  const openFormBtn = document.getElementById("openFormBtn");
+  const lightbox = document.getElementById("lightbox");
+  const closeBtn = document.getElementById("closeBtn");
+  const contactForm = document.getElementById("contactForm");
+
+  openFormBtn.addEventListener("click", function () {
+    lightbox.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", function () {
+    lightbox.style.display = "none";
+  });
+
+  window.addEventListener("click", function (event) {
+    if (event.target === lightbox) {
+      lightbox.style.display = "none";
+    }
+  });
+
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const surname = document.getElementById("surname").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    const mailtoLink = `mailto:liehalford@gmail.com?subject=Contact%20Form%20Submission&body=Name:%20${encodeURIComponent(
+      name
+    )}%0A
+    Surname:%20${encodeURIComponent(surname)}%0A
+    Email:%20${encodeURIComponent(email)}%0A
+    Message:%20${encodeURIComponent(message)}`;
+
+    window.location.href = mailtoLink;
+  });
+});
