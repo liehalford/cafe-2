@@ -83,7 +83,28 @@
     </div>
     <h1 class="contact-page-h2">Collaborate with Us!</h1>
     <h3 class="contact-text-primary">Collabora con noi e dai alla tua location un valore aggiunto. Cafe de Anatolia e il leader del mondo della shisha in Italia. Inserendoci nella vostra location cureremo la vostra clientela ma sopratutto produremmo un flusso di clientela esterna amante di questo rituale, in continua crescita. Decideremo insieme voi gli spazi e gli orari migliori da proporre come servizio. Il nostro modello di business e pensato nei minimi dettagli per far si che entrambe le societa ottengano i migliori vantaggi.</h3>
-     <button><a href="">Contattaci</a></button>
+     <button id="openFormBtn">Contattaci</button>
+     <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span id="closeBtn" class="close">&times;</span>
+      <form id="contactForm">
+        <h2>Contattaci</h2>
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="surname">Cognome</label>
+        <input type="text" id="surname" name="surname" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Messaggio</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Invia</button>
+      </form>
+    </div>
+  </div>
     
     <div class="divider">
         <div class="divider-line"></div>
