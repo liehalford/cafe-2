@@ -779,6 +779,10 @@ button[type="submit"]:hover {
     background-color: rgba(0, 0, 0, 0.802);
   }
   /* events page */
+  #event-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .hero-events h1 {
     color: rgba(245, 245, 245, 0.448);
     font-family: var(--text-font);
@@ -817,7 +821,7 @@ button[type="submit"]:hover {
   }
 
   .container .event-1-text {
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 30px;
   }
   #event-container img {
