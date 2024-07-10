@@ -579,6 +579,7 @@ button a {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
   }
 
   button .navbar-toggler-icon {
@@ -697,13 +698,14 @@ button a {
     font-size: 80px;
     padding-top: 250px;
     font-size: 60px;
+    margin-top: 80px;
   }
   #event-container h1 {
     color: var(--primary-color);
     font-style: italic;
     font-family: var(--text-font);
     font-size: 30px;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 50px;
   }
   #event-container .row {
@@ -744,6 +746,7 @@ button a {
     font-style: italic;
     font-size: 60px;
     padding-top: 250px;
+    margin-top: 80px;
   }
   .container .product-page-head-info {
     font-size: 40px;
@@ -778,6 +781,7 @@ button a {
     font-style: italic;
     font-size: 60px;
     padding-top: 250px;
+    margin-top: 80px;
   }
 
   .container .location-page-head-info {
