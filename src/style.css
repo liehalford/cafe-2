@@ -306,7 +306,10 @@ button a {
 }
 #event-container img {
   width: 450px;
-  height: 410px;
+  height: auto;
+}
+.container #two-img {
+  margin-top: 70px;
 }
 /* products page starts */
 .hero-products {
@@ -375,6 +378,8 @@ button a {
 .slide img {
   width: 33.3%;
   margin-right: 10px;
+  height: auto;
+  object-fit: cover;
 }
 
 .prev,
@@ -451,7 +456,9 @@ button a {
 .about-locations .slide img {
   width: 33.3%;
   margin-right: 10px;
-  height: 500px;
+
+  height: auto;
+  object-fit: cover;
 }
 
 .location .info {
@@ -557,16 +564,21 @@ button a {
   }
 
   .logo img {
-    margin-top: 200px;
+    margin-top: 300px;
     width: 300px;
     height: 200px;
+  }
+  .logo {
+    height: 150%;
   }
   .navbar {
     background-color: black;
     border-bottom: 1px solid var(--primary-color);
     padding-top: 5px;
     padding-bottom: 5px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 
   button .navbar-toggler-icon {
@@ -721,7 +733,7 @@ button a {
   }
   #event-container img {
     width: 300px;
-    height: 260px;
+    height: auto;
   }
 
   /* product page */
@@ -756,6 +768,8 @@ button a {
     width: 100%;
     margin-right: 0px;
     margin-left: 0px;
+    height: auto;
+    object-fit: cover;
   }
   /* location page */
   .hero-locations h1 {
@@ -788,9 +802,11 @@ button a {
     font-size: 18px;
   }
   .about-locations .slide img {
-    width: 50%;
-    margin-right: 0px;
-    height: 300px;
+    width: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+    height: auto;
+    object-fit: cover;
   }
   .about-locations .slide {
     display: flex;
