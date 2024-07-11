@@ -377,12 +377,15 @@ button[type="submit"]:hover {
   height: 1px;
   background-color: var(--primary-color);
 }
+#event-container h2 {
+  margin-top: 50px;
+}
 #event-container img {
   width: 450px;
   height: auto;
 }
 .container #two-img {
-  margin-top: 70px;
+  margin-top: 0px;
 }
 /* products page starts */
 .hero-products {
