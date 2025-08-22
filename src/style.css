@@ -25,7 +25,20 @@ body {
 /* hero page+navbar */
 .containerHero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(/img/cover-about-modified.jpg);
+    url(/img/cover-about-modified.webp);
+  width: 100%;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  border-bottom: 1px solid var(--primary-color);
+}
+.containerHeroShop {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/img/backshop.jpg);
   width: 100%;
   height: 800px;
   background-position: center;
@@ -483,11 +496,94 @@ button[type="submit"]:hover {
 .next {
   right: 0;
 }
+/* shop page */
+/* cards */
+.shopContainer {
+  width: 80%;
+  height: 100%;
+  padding: 0px;
+  margin-top: 0px;
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+  border-left: 1px solid var(--primary-color);
+  border-right: 1px solid var(--primary-color);
+}
+.shopContainer h1 {
+  color: var(--primary-color);
+  font-size: 60px;
+  margin: 0px auto 50px auto;
+  font-style: italic;
+}
+.shopContainer .row {
+  margin: 50px 20px;
+}
+.containerShop-about h1 {
+  color: var(--primary-color);
+  font-size: 60px;
+  margin: 50px auto;
+  font-style: italic;
+}
+.containerShop-about p {
+  color: whitesmoke;
+  margin: 50px 40px;
+  font-size: 30px;
+}
+
+.shopContainer .card {
+  border-radius: 1.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.product-card {
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* cards img */
+.product-card img {
+  border: 2px solid var(--primary-color);
+  width: 100%;
+  display: block;
+  aspect-ratio: 6/10;
+  transition: filter 0.4s ease;
+}
+
+.product-card:hover img {
+  filter: brightness(70%);
+}
+
+/* Card body */
+.product-card .card-body {
+  text-align: center;
+  background-color: #111111;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--primary-color);
+  border-top: 1 px solid var(--primary-color);
+}
+
+/* cards btn */
+.product-card .card-body a {
+  padding: 0.25rem 0.5rem;
+  background: transparent; /* без фона */
+  transition: background 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-color) !important;
+  font-weight: bold;
+  font-size: 35px !important;
+}
 
 /* location page */
 .hero-locations {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/img/locations.jpg);
+    url(/img/locations.webp);
   width: 100%;
   height: 800px;
   background-position: center;
@@ -700,6 +796,8 @@ button[type="submit"]:hover {
     margin-bottom: 30px;
     width: 280px;
     height: 380px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
   }
 
   .divider-line {
@@ -831,6 +929,62 @@ button[type="submit"]:hover {
   #event-container img {
     width: 300px;
     height: auto;
+  }
+  /* shop page  */
+  .container .card {
+    border-radius: 1.5rem;
+    width: 350px;
+    height: 450px;
+    display: block;
+    margin: 0 auto;
+  }
+  .shopContainer h1 {
+    color: var(--primary-color);
+    font-size: 30px;
+    margin: 0px auto 30px auto;
+    font-style: italic;
+  }
+  .shopContainer .row {
+    margin: 30px 20px;
+  }
+  .containerShop-about h1 {
+    color: var(--primary-color);
+    font-size: 30px;
+    margin: 30px auto;
+    font-style: italic;
+  }
+  .containerShop-about p {
+    color: whitesmoke;
+    margin: 30px 10px;
+    font-size: 15px;
+  }
+
+  .shopContainer .card {
+    border-radius: 1.5rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* cards img */
+  .product-card img {
+    border: 2px solid var(--primary-color);
+    width: 100%;
+    display: block;
+    aspect-ratio: 6/10;
+
+    transition: filter 0.4s ease;
+  }
+
+  /* cards btn */
+  .product-card .card-body a {
+    padding: 0.25rem 0.5rem;
+    background: transparent; /* без фона */
+    transition: background 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color) !important;
+    font-weight: bold;
+    font-size: 25px !important;
   }
 
   /* product page */
