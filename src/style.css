@@ -1123,9 +1123,21 @@ button[type="submit"]:hover {
     font-size: 22px;
   }
   /* swiper */
+  .my-gallery {
+    display: block; /* галерея видна */
+    width: 100%;
+    min-height: 200px; /* чтобы Swiper мог посчитать высоту */
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
   .swiper-button-prev,
   .swiper-button-next {
-    display: none;
+    display: none; /* скрываем кнопки */
   }
 
   .location .prod-one-h {

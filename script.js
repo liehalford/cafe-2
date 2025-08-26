@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 1,
         navigation: false,
       },
-      769: {
+      901: {
         slidesPerView: 2,
         navigation: {
           nextEl: ".swiper-button-next",
