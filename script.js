@@ -115,6 +115,23 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = mailtoLink;
   });
 });
+// swiper
+const swiper = new Swiper(".my-gallery", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    // На мобильных устройствах скрываем кнопки
+    768: {
+      navigation: false,
+    },
+  },
+});
+// back to top btn
 const backToTop = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
