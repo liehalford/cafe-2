@@ -529,7 +529,7 @@ button[type="submit"]:hover {
 .containerShop-about p {
   color: whitesmoke;
   margin: 50px 40px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .shopContainer .card {
@@ -546,6 +546,9 @@ button[type="submit"]:hover {
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.row .text #last-p-barocco {
+  margin-top: 0px !important;
 }
 
 /* cards img */
@@ -745,6 +748,27 @@ button[type="submit"]:hover {
   color: var(--primary-color);
   cursor: pointer;
   transition: 0.3s;
+}
+#backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  padding: 10px 15px;
+  font-size: 24px;
+  background-color: #333;
+  color: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  transition: opacity 0.3s;
+}
+
+#backToTop:hover {
+  background-color: #555;
 }
 
 @media (max-width: 900px) {
@@ -993,7 +1017,8 @@ button[type="submit"]:hover {
   /* cards img */
   .product-card img {
     border: 2px solid var(--primary-color);
-    width: 100%;
+    width: 80%;
+    height: auto;
     display: block;
     aspect-ratio: 6/10;
 
