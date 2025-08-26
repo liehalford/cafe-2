@@ -116,8 +116,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 // swiper
-const swiper = new Swiper(".my-gallery", {
-  slidesPerView: 1,
+const swiper = new swiper(".my-gallery", {
+  slidesPerView: 2,
   spaceBetween: 10,
   loop: true,
   navigation: {
