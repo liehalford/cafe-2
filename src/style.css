@@ -3,7 +3,9 @@
   --link-font-family: "Open Sans", sans-serif;
   --text-font: "Poppins", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0px;
   padding: 0px;
@@ -578,6 +580,29 @@ button[type="submit"]:hover {
   color: var(--primary-color) !important;
   font-weight: bold;
   font-size: 35px !important;
+}
+/* pagination of shop */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  position: relative;
+}
+.pagination a {
+  padding: 10px 20px;
+  font-size: 20px;
+  background: #111111;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.pagination a:hover {
+  background: darken(var(--primary-color), 50%);
+  color: #fff; /* текст становится белым */
+  transition: all 0.3s ease;
 }
 
 /* location page */
