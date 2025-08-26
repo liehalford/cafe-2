@@ -584,6 +584,27 @@ button[type="submit"]:hover {
   font-weight: bold;
   font-size: 35px !important;
 }
+/* shop now button */
+.shop-now-btn {
+  display: inline-block;
+  margin-bottom: 80px;
+  padding: 12px 30px;
+  background-color: #111111;
+  color: var(--primary-color);
+  font-size: 30px;
+  font-weight: bold;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.shop-now-btn:hover {
+  color: whitesmoke;
+  transition: 0.3s ease, color 0.3s ease;
+}
+
 /* pagination of shop */
 .pagination {
   display: flex;
@@ -680,22 +701,23 @@ button[type="submit"]:hover {
 }
 /* swiper */
 .my-gallery {
-  width: 100%; /* контейнер растягивается на всю ширину */
-  height: auto; /* высота по контенту */
+  width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 
 .swiper-slide {
-  text-align: center;
-  display: flex; /* для центрирования контента */
+  display: flex;
   justify-content: center;
   align-items: center;
+  height: 300px;
 }
 
 .swiper-slide img {
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
   height: auto;
-  display: block;
 }
 
 /* footer starts */
@@ -1055,6 +1077,22 @@ button[type="submit"]:hover {
     font-weight: bold;
     font-size: 25px !important;
   }
+  /* shop now button */
+  .shop-now-btn {
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 12px 30px;
+    background-color: #111111;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
   .pagination {
     margin-top: 30px;
     padding-bottom: 60px;
@@ -1124,20 +1162,26 @@ button[type="submit"]:hover {
   }
   /* swiper */
   .my-gallery {
-    display: block; /* галерея видна */
-    width: 100%;
-    min-height: 200px; /* чтобы Swiper мог посчитать высоту */
-  }
-
-  .swiper-slide img {
-    width: 100%;
-    height: auto;
     display: block;
+    width: 100%;
+    min-height: 200px;
   }
 
   .swiper-button-prev,
   .swiper-button-next {
     display: none; /* скрываем кнопки */
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* фиксированная высота слайда */
+  }
+
+  .swiper-slide img {
+    max-height: 100%;
+    width: auto;
+    display: block;
   }
 
   .location .prod-one-h {
