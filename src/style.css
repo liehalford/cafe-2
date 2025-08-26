@@ -678,6 +678,25 @@ button[type="submit"]:hover {
   text-decoration: none;
   color: white;
 }
+/* swiper */
+.my-gallery {
+  width: 100%; /* контейнер растягивается на всю ширину */
+  height: auto; /* высота по контенту */
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex; /* для центрирования контента */
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* footer starts */
 .footer {
