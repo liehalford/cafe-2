@@ -116,21 +116,31 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 // swiper
-const swiper = new swiper(".my-gallery", {
-  slidesPerView: 2,
-  spaceBetween: 10,
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    // На мобильных устройствах скрываем кнопки
-    768: {
-      navigation: false,
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".my-gallery", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-  },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        navigation: false,
+      },
+      769: {
+        slidesPerView: 2,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      },
+    },
+  });
 });
+
 // back to top btn
 const backToTop = document.getElementById("backToTop");
 
