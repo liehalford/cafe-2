@@ -628,6 +628,41 @@ button[type="submit"]:hover {
   color: #fff; /* текст становится белым */
   transition: all 0.3s ease;
 }
+/* custom design shop */
+.containerHeroShop .logo {
+  padding-bottom: 250px;
+}
+.containerShop-about h3 {
+  color: whitesmoke;
+}
+#custom-hero h1 {
+  color: var(--primary-color);
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+#custom-hero p {
+  color: whitesmoke;
+  font-size: 25px;
+  margin: auto 40px 50px 40px;
+}
+#custom-hero a {
+  padding: 15px 30px;
+  font-size: 25px;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  margin-bottom: 50px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+#custom-hero a:hover {
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
 
 /* location page */
 .hero-locations {
@@ -1081,7 +1116,18 @@ button[type="submit"]:hover {
     padding: 8px 15px;
     font-size: 15px;
   }
-
+  /* custom design */
+  #custom-hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  #custom-hero p {
+    font-size: 20px;
+  }
+  #custom-hero a {
+    font-size: 20px;
+  }
   /* product page */
 
   .hero-products h1 {
