@@ -115,32 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = mailtoLink;
   });
 });
-// swiper
-document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper(".my-gallery", {
-    slidesPerView: 2,
-    spaceBetween: 10,
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-        navigation: false,
-      },
-      901: {
-        slidesPerView: 2,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      },
-    },
-  });
-});
-
 // back to top btn
 const backToTop = document.getElementById("backToTop");
 
