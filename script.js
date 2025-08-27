@@ -147,8 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
     breakpoints: {
       0: {
         // мобильные до 900px
-        slidesPerView: 1,
-        pagination: false, // кружочки скрыты
+        slidesPerView: 2,
       },
       900: {
         // ПК
