@@ -628,6 +628,23 @@ button[type="submit"]:hover {
   color: #fff; /* текст становится белым */
   transition: all 0.3s ease;
 }
+/* test */
+.about .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px; /* между секциями */
+}
+
+.about .col-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about .col-img {
+  display: flex;
+  justify-content: center;
+}
 /* custom design shop */
 .containerHeroShop .logo {
   padding-bottom: 250px;
@@ -1107,6 +1124,9 @@ button[type="submit"]:hover {
     text-decoration: none;
     border-radius: 10px;
     transition: background-color 0.3s;
+  }
+  .about .col-text {
+    margin-top: 50px;
   }
   .pagination {
     margin-top: 30px;
