@@ -130,3 +130,34 @@ window.addEventListener("scroll", () => {
 backToTop.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+// swiper
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".my-gallery", {
+    loop: true,
+    spaceBetween: 15,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    speed: 900, // плавная смена
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true, // кликаем по кружочку
+    },
+    breakpoints: {
+      0: {
+        // мобильные до 900px
+        slidesPerView: 1,
+        pagination: false, // кружочки скрыты
+      },
+      900: {
+        // ПК
+        slidesPerView: 3,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true, // кружочки видны и кликабельны
+        },
+      },
+    },
+  });
+});

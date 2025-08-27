@@ -680,6 +680,66 @@ button[type="submit"]:hover {
   color: white;
   transition: all 0.3s ease;
 }
+/* news page */
+.my-gallery {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.swiper-wrapper {
+  display: flex; /* Swiper сам использует flex */
+}
+
+.swiper-slide {
+  flex-shrink: 0; /* важно, чтобы слайды не сжимались */
+  position: relative;
+  width: 100%; /* потом Swiper задаст ширину под slidesPerView */
+  padding-top: 75%; /* aspect ratio 4:3 */
+  overflow: hidden;
+  border-radius: 12px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  margin-bottom: 50px;
+}
+
+/* Базовые буллеты */
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  background: whitesmoke !important; /* полупрозрачный фон */
+  border: 1px solid var(--primary-color); /* обводка */
+  border-radius: 50%;
+  margin: 0 8px !important;
+  opacity: 1;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+/* При наведении */
+.swiper-pagination-bullet:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(1.1);
+}
+
+/* Активная точка */
+.swiper-pagination-bullet-active {
+  background: #fff; /* полностью белая */
+  transform: scale(1.3); /* чуть больше */
+}
 
 /* location page */
 .hero-locations {
@@ -830,9 +890,9 @@ button[type="submit"]:hover {
   height: 50px;
   padding: 10px 15px;
   font-size: 24px;
-  background-color: #333;
+  background-color: transparent;
   color: var(--primary-color);
-  border: none;
+  border: 1px solid var(--primary-color);
   border-radius: 50%;
   cursor: pointer;
   display: none;
@@ -841,7 +901,8 @@ button[type="submit"]:hover {
 }
 
 #backToTop:hover {
-  background-color: #555;
+  background-color: #212121;
+  transition: all 0.5s ease;
 }
 
 @media (max-width: 900px) {
@@ -1227,7 +1288,19 @@ button[type="submit"]:hover {
     transition: transform 0.5s ease;
     width: calc(100% * 3);
   }
-
+  /* news page */
+  .swiper-slide {
+    padding-top: 100%; /* меньше для мобильных */
+    margin-bottom: 30px;
+  }
+  .swiper-pagination {
+    display: none; /* скрываем кружочки на мобильных */
+  }
+  .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
   /* footer starts */
   #contact-container {
     padding-bottom: 50px;
