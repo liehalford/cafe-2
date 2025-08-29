@@ -447,57 +447,7 @@ button[type="submit"]:hover {
   color: whitesmoke;
   margin: 0px 100px 50px 100px;
 }
-/* carousel style */
-.carousel {
-  width: 100%;
-  margin: 0 auto; /* Center align the carousel */
-  overflow: hidden;
-  position: relative; /* Ensure buttons are positioned relative to the carousel */
-}
 
-.slider-container {
-  display: flex;
-  overflow: visible;
-}
-
-.slide {
-  display: flex;
-  transition: transform 0.5s ease;
-  width: 200%;
-}
-
-.slide img {
-  width: 33.3%;
-  margin-right: 10px;
-  height: auto;
-  object-fit: cover;
-}
-
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  color: black;
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
 /* shop page */
 /* cards */
 .shopContainer {
@@ -690,6 +640,10 @@ button[type="submit"]:hover {
   max-width: 1200px;
   margin: 0 auto;
 }
+.swiper.my-gallery {
+  position: relative; /* чтобы bullets правильно позиционировались */
+  padding-bottom: 30px; /* отступ снизу, чтобы bullets не налезали на картинки */
+}
 
 .swiper-wrapper {
   display: flex; /* Swiper сам использует flex */
@@ -701,7 +655,6 @@ button[type="submit"]:hover {
   width: 100%; /* потом Swiper задаст ширину под slidesPerView */
   padding-top: 75%; /* aspect ratio 4:3 */
   overflow: hidden;
-  border-radius: 12px;
   height: 100%;
   object-fit: cover;
 }
@@ -1234,21 +1187,7 @@ button[type="submit"]:hover {
     font-size: 18px;
     margin: 10px 35px 30px;
   }
-  /* slider */
 
-  .slide {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: calc(100% * 3);
-  }
-
-  .slide img {
-    width: 100%;
-    margin-right: 0px;
-    margin-left: 0px;
-    height: auto;
-    object-fit: cover;
-  }
   /* location page */
   .hero-locations h1 {
     color: rgba(245, 245, 245, 0.448);
@@ -1293,20 +1232,25 @@ button[type="submit"]:hover {
     width: calc(100% * 3);
   }
   /* news page */
+
   .swiper-slide {
-    padding-top: 100%; /* меньше для мобильных */
-    margin-bottom: 30px;
+    width: 200px; /* фиксированная ширина слайда */
+    height: 250px; /* фиксированная высота слайда */
+    flex-shrink: 0; /* чтобы слайд не сжимался */
   }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* картинка заполняет слайд без искажений */
+  }
+
   .swiper-pagination-bullet {
     width: 10px !important;
     height: 10px !important;
     border: 1px solid #be9e55;
   }
-  .swiper-slide img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-  }
+
   /* footer starts */
   #contact-container {
     padding-bottom: 50px;
