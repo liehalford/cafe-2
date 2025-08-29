@@ -665,12 +665,16 @@ button[type="submit"]:hover {
   font-size: 25px;
   margin: auto 40px 50px 40px;
 }
+.hero-text {
+  margin-top: 30px;
+}
 #custom-hero a {
   padding: 15px 30px;
   font-size: 25px;
   background-color: transparent;
   border: 1px solid var(--primary-color);
   margin-bottom: 50px;
+  margin-top: 30px;
   border-radius: 8px;
   text-decoration: none;
   color: var(--primary-color);
