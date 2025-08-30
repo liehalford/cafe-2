@@ -55,31 +55,46 @@ backToTop.addEventListener("click", () => {
 });
 // swiper
 document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper(".my-gallery", {
-    loop: true,
-    spaceBetween: 15,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    speed: 900, // плавная смена
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true, // кликаем по кружочку
-    },
-    breakpoints: {
-      0: {
-        // мобильные до 900px
-        slidesPerView: 2,
+  const galleries = document.querySelectorAll(".swiper.my-gallery");
+  const swipers = [];
+
+  galleries.forEach((gallery, i) => {
+    swipers[i] = new Swiper(gallery, {
+      loop: true,
+      spaceBetween: 15,
+      autoplay: false, // autoplay стартуем вручную
+      speed: 800,
+      pagination: {
+        el: gallery.querySelector(".swiper-pagination"),
+        clickable: true,
       },
-      900: {
-        // ПК
-        slidesPerView: 3,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true, // кружочки видны и кликабельны
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+        },
+        900: {
+          slidesPerView: 3,
         },
       },
-    },
+    });
   });
+
+  // Observer следит за каждой галереей
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const index = [...galleries].indexOf(entry.target);
+        if (index !== -1) {
+          if (entry.isIntersecting) {
+            swipers[index].autoplay.start(); // запускаем
+          } else {
+            swipers[index].autoplay.stop(); // останавливаем
+          }
+        }
+      });
+    },
+    { threshold: 0.3 } // 30% галереи видно — считаем активной
+  );
+
+  galleries.forEach((gallery) => observer.observe(gallery));
 });
